@@ -52,10 +52,7 @@ getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     // GO TO END_PAGE
     localStorage.setItem("mostRecentScore", score);
-    return window.open(
-      "https://singhvikram97.github.io/Quiz-App/end.html",
-      "_self"
-    );
+    return window.open("end.html", "_self");
   }
 
   questionCounter++;
